@@ -8,7 +8,6 @@ class Solution {
             char c = s.charAt(right);
             right++;
             window.put(c, window.getOrDefault(c, 0) + 1);
-            System.out.printf("window: [%d, %d)\n", left, right);
 
             // check if the left side needs to be shrunk
             while(window.get(c) > 1) {
